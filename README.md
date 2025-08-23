@@ -8,8 +8,8 @@ The site includes an **About Me** section, a **Skills & Experience** section, an
 ---
 
 ## 🚀 Live Demo
-- **GitHub Pages Link:** [View Site]([https://sirdwainw.github.io/personal-portfolio-site/](https://sirdwainw.github.io/personal-portfolio-site/))  
-- **Repository Link:** [View Code]([https://github.com/sirdwainw/personal-portfolio-site](https://github.com/sirdwainw/personal-portfolio-site))  
+- **GitHub Pages Link:** [View Site]([https://sirdwainw.github.io/personal-portfolio-site/])  
+- **Repository Link:** [View Code]([https://github.com/sirdwainw/personal-portfolio-site])  
 
 ---
 
