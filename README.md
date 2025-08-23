@@ -48,11 +48,6 @@ The site includes an **About Me** section, a **Skills & Experience** section, an
 
 ---
 
-## 📸 Screenshots (Optional)
-_Add screenshots or GIFs of your site here._  
-
----
-
 ## 📬 Contact
 If you’d like to connect:  
 - Email: [sirdwainw@yahoo.com](mailto:sirdwainw@yahoo.com)  
