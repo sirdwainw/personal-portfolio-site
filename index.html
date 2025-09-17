@@ -1,147 +1,307 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sir Washington | Systems Specialist & Software Developer</title>
-  <meta name="description" content="Sir Washington — Systems Specialist and software developer experienced in Python, C#, SQL, API integration, and user-centered apps for smart utility systems." />
-  <style>
-    /* minimal readable defaults (optional) */
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; margin: 0; }
-    header, footer { background:#1b56df; color:#fff; }
-    .wrap { max-width: 72ch; margin: 0 auto; padding: 1.25rem; }
-    nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
-    nav a { color:#c7d2fe; text-decoration: none; }
-    nav a:hover, a:focus { text-decoration: underline; }
-    .skip-link { position: absolute; left: -999px; top: -999px; background:#fff; color:#000; padding:.5rem; }
-    .skip-link:focus { left: 1rem; top: 1rem; }
-    main section { padding-block: 1.25rem; }
-    figure { margin: 0; }
-    aside { background: #f5f8ff; border-left: 4px solid #3b82f6; padding: 1rem; border-radius: .5rem; }
-    ul.skill-list { padding-left: 1rem; }
-    ul.skill-list > li { margin-bottom: .5rem; }
-    form { display: grid; gap: .75rem; }
-    input, select, textarea { font: inherit; padding: .5rem; width: 100%; box-sizing: border-box; }
-    button { font: inherit; padding: .6rem 1rem; cursor: pointer; }
-    footer p { margin: 0; }
-  </style>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sir Washington | Systems Specialist & Software Developer</title>
+    <meta
+      name="description"
+      content="Sir Washington — Systems Specialist and software developer experienced in Python, C#, SQL, API integration, and user-centered apps."
+    />
 
-  <header class="wrap" role="banner">
-    <h1>Sir Washington</h1>
-    <h2 class="site-tagline">Systems Specialist</h2>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <main id="main" class="wrap">
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About Me</h2>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+       referrerpolicy="no-referrer"
+    />
 
-      <figure>
-        <img src="sir.jpeg" alt="Headshot of Sir Washington" width="280" height="280" />
-        <figcaption>Sir Washington</figcaption>
-      </figure>
+   
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <aside>
-        <p>
-          I am a dedicated technology professional with a strong background in software development, systems analysis, and data integration. Over the years, I’ve built expertise in Python, Java, C++, C#, SQL, and API integrations, and I’ve applied these skills in roles that span both technical and support functions. My career began with positions at Amazon as an IT Support Technician and later at Master Meter as a Systems Specialist and Systems Analyst/Trainer, where I focused on optimizing processes and supporting smart utility solutions. I hold a Master’s degree in Computer Science from Colorado Technical University, and I am now considering pursuing a doctorate to continue expanding my knowledge and leadership in the field.
-        </p>
-      </aside>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="#"
+          ><span class="logo-mark">&lt;/&gt;</span> Sir Washington</a
+        >
 
-      <p>
-        I’ve had the opportunity to lead and contribute to projects that bring together technical innovation and real-world application. Some of my most exciting work includes developing customer-facing portals for water utilities and building creative applications like <em>Presto</em>, a mobile app designed for meter data management, and <em>Urban Doodle</em>, a word game powered by the Urban Dictionary API. My focus has always been on usability and scalability—designing solutions that not only function effectively but also improve the experience for the end user. I enjoy the challenge of blending process-driven development with creative problem-solving to deliver impactful results.
-      </p>
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+        />
+        <label for="menu-toggle" class="hamburger" aria-hidden="true"
+          ><span></span
+        ></label>
 
-      <p>
-        Beyond my technical journey, I take pride in balancing my professional growth with my personal life. As a full-time professional, graduate, husband, and father, I stay motivated by the opportunity to set an example of resilience, adaptability, and continuous learning. My journey is fueled by a passion for innovation and a drive to create solutions that matter—whether in technology, education, or community. Looking ahead, I’m committed to expanding my expertise, mentoring others, and possibly pursuing doctoral research to further my impact in the technology space.
-      </p>
-    </section>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <section id="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills &amp; Experience</h2>
-      <ul class="skill-list">
-        <li>
-          <h3>Python</h3>
-          <p>Used extensively in academic research and personal projects, including building APIs, data processing pipelines, and the <em>Urban Doodle</em> word game.</p>
-        </li>
-        <li>
-          <h3>Java</h3>
-          <p>Applied in coursework and systems design, with experience creating modular, object-oriented applications.</p>
-        </li>
-        <li>
-          <h3>C++</h3>
-          <p>Background in performance-oriented programming and systems-level development, leveraging it for problem-solving in advanced coursework.</p>
-        </li>
-        <li>
-          <h3>C#</h3>
-          <p>Hands-on experience with .NET for application development and integration tasks within utility industry solutions.</p>
-        </li>
-        <li>
-          <h3>SQL</h3>
-          <p>Strong experience writing complex queries and integrating with Microsoft SQL Server and Azure SQL Database to support utility data and customer-facing applications.</p>
-        </li>
-        <li>
-          <h3>JavaScript / Node.js</h3>
-          <p>Currently used in developing <em>Presto</em>, a mobile app for utility meter management, with backend services built on Node.js.</p>
-        </li>
-        <li>
-          <h3>React Native (JSX)</h3>
-          <p>Leveraged to design modern mobile apps with scalable front-end interfaces, emphasizing usability and performance.</p>
-        </li>
-        <li>
-          <h3>HTML &amp; CSS</h3>
-          <p>Applied to build clean, responsive layouts for professional projects and personal portfolio sites.</p>
-        </li>
-      </ul>
-    </section>
+    <main id="main">
+     
+      <section class="hero grid-areas">
+        <div class="wrap hero__inner">
+          <div class="hero__text">
+            <h1>Building user-centered solutions.</h1>
+            <p>
+              I’m a Systems Specialist & software developer focused on API
+              integrations, data pipelines, and practical apps that solve real
+              problems.
+            </p>
+            <div class="cta">
+              <a class="btn" href="#contact"
+                ><i class="fa-solid fa-paper-plane"></i> Contact Me</a
+              >
+              <a class="btn btn--ghost" href="#skills"
+                ><i class="fa-solid fa-code"></i> View Skills</a
+              >
+            </div>
+          </div>
+          <figure class="hero__art">
+            <img
+              src="sir.jpeg"
+              alt="Professional headshot of Sir Washington"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Systems Specialist & Software Developer</figcaption>
+          </figure>
+        </div>
+      </section>
 
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Let’s Connect</h2>
+   
+      <section id="about" class="section">
+        <div class="wrap">
+          <h2>About Me</h2>
 
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:sirdwainw@yahoo.com">sirdwainw@yahoo.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sirwashingtonmscs/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sirwashingtonmscs/</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/sirdwainw" target="_blank" rel="noopener noreferrer">github.com/sirdwainw</a></li>
-      </ul>
+          <aside class="callout">
+            <p>
+              I am a dedicated technology professional with a strong background
+              in software development, systems analysis, and data integration.
+              Over the years, I’ve built expertise in Python, Java, C++, C#,
+              SQL, and API integrations, and I’ve applied these skills in roles
+              that span both technical and support functions. My career began
+              with positions at Amazon as an IT Support Technician and later at
+              Master Meter as a Systems Specialist and Systems Analyst/Trainer,
+              where I focused on optimizing processes and supporting smart
+              utility solutions. I hold a Master’s degree in Computer Science
+              from Colorado Technical University, and I am now considering
+              pursuing a doctorate to continue expanding my knowledge and
+              leadership in the field.
+            </p>
+          </aside>
 
-      <!-- Working contact form (uses Formspree placeholder - replace with your form ID or backend endpoint) -->
-      <form action="https://formspree.io/f/your-form-id" method="POST" novalidate>
-        <fieldset>
-          <legend>Contact Form</legend>
+          <p>
+            I’ve had the opportunity to lead and contribute to projects that
+            bring together technical innovation and real-world application. Some
+            of my most exciting work includes developing customer-facing portals
+            for water utilities and building creative applications like
+            <em>Presto</em>, a mobile app designed for meter data management,
+            and <em>Urban Doodle</em>, a word game powered by the Urban
+            Dictionary API. My focus has always been on usability and
+            scalability—designing solutions that not only function effectively
+            but also improve the experience for the end user.
+          </p>
 
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required />
+          <p>
+            Beyond my technical journey, I take pride in balancing my
+            professional growth with my personal life. As a full-time
+            professional, graduate, husband, and father, I stay motivated by the
+            opportunity to set an example of resilience, adaptability, and
+            continuous learning. Looking ahead, I’m committed to expanding my
+            expertise, mentoring others, and possibly pursuing doctoral research
+            to further my impact in the technology space.
+          </p>
+        </div>
+      </section>
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" required />
+      <section id="skills" class="section section--alt">
+        <div class="wrap">
+          <h2>Skills &amp; Experience</h2>
 
-          <label for="subject">Subject</label>
-          <select id="subject" name="subject">
-            <option value="general">General Inquiry</option>
-            <option value="project">Project Opportunity</option>
-            <option value="speaking">Speaking / Mentoring</option>
-          </select>
+          <div class="toolbar">
+            <div class="badges">
+              <span class="badge">API Integration</span>
+              <span class="badge">Data Pipelines</span>
+              <span class="badge">Usability</span>
+            </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+            <details class="dropdown">
+              <summary>Quick Links ▾</summary>
+              <ul class="dropdown__menu">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/sirwashingtonmscs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/sirdwainw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </div>
 
-          <button type="submit">Submit</button>
-        </fieldset>
-      </form>
-      <noscript>Your browser has JavaScript disabled; the form will submit via standard POST.</noscript>
-    </section>
-  </main>
+          <div class="skills-grid">
+            <article class="card skill--lang">
+              <h3>Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript / Node.js</li>
+              </ul>
+            </article>
 
-  <footer class="wrap" role="contentinfo">
-    <p>&copy; 2024 Sir Washington. All rights reserved.</p>
-  </footer>
-</body>
+            <article class="card skill--mobile">
+              <h3>Mobile &amp; Frontend</h3>
+                 <ul>
+                <li>React Native (JSX)</li>
+                <li>HTML &amp; CSS</li>
+                <li>Responsive UI</li>
+                <li>Accessibility-First Layouts</li>
+                <li>Cross-Platform Design</li>
+              </ul>
+            
+            </article>
+
+            <article class="card skill--backend">
+              <h3>Backend &amp; Data</h3>
+              <ul>
+                <li>Node.js services</li>
+                <li>API design</li>
+                <li>Azure SQL Database</li>
+                <li>Microsoft SQL Server</li>
+              </ul>
+            </article>
+
+            <article class="card skill--projects">
+              <h3>Current Projects</h3>
+              <ul class="proj-list">
+                <li>
+                  <strong>Presto</strong> – Utility meter management app (React
+                  Native + Node.js)
+                </li>
+                <li>
+                  <strong>Urban Doodle</strong> – Word game using Urban
+                  Dictionary API
+                </li>
+                <li>
+                  <strong>Customer Portal</strong> – Water utility portal with
+                  SQL + APIs
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="wrap">
+          <h2>Let’s Connect</h2>
+
+          <ul class="contact-list">
+  <li>
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:sirdwainw@yahoo.com">sirdwainw@yahoo.com</a>
+  </li>
+  <li>
+    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/sirdwainw" target="_blank" rel="noopener noreferrer">github.com/sirdwainw</a>
+  </li>
+  <li>
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/sirwashingtonmscs/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sirwashingtonmscs</a>
+  </li>
+</ul>
+          <p>
+            Whether you have a project in mind, want to discuss potential
+            opportunities, or just want to say hello, I’d love to hear from you.
+            Please fill out the form below or reach out via email or LinkedIn.</p>
+
+          <form
+            action="https://formspree.io/f/your-form-id"
+            method="POST"
+            novalidate
+            class="contact-form"
+          >
+            <fieldset>
+              <legend>Contact Form</legend>
+
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              />
+
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="project">Project Opportunity</option>
+                <option value="speaking">Speaking / Mentoring</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn">
+                <i class="fa-solid fa-paper-plane"></i> Submit
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; 2024 Sir Washington. All rights reserved.</p>
+        <a href="#" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
 </html>

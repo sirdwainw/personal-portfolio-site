@@ -28,7 +28,7 @@ The site includes an **About Me** section, a **Skills & Experience** section, an
 - [x] Additional form fields (Subject dropdown)
 - [x] Enhanced accessibility features (skip link, aria-labels)
 - [x] Multiple contact methods (email, LinkedIn, GitHub)
-- [ ] Projects or experience section (future enhancement)
+- [x] Projects or experience section (future enhancement)
 - [x] Creative but professional content
 
 ---
