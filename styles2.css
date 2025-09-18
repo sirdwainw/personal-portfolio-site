@@ -12,6 +12,10 @@
 
   --radius:14px;
   --shadow:0 10px 30px rgba(255, 255, 255, 0.25);
+
+    --bg:#0f172a; --surface:#111827; --card:#0b1324;
+  --fg:#e5e7eb; --muted:#94a3b8;
+  --brand:#6366f1; --brand-2:#4f46e5; --accent:#22c55e;
 }
 
 *{box-sizing:border-box}
@@ -57,10 +61,15 @@ h3{font-weight:600; font-size:1.125rem}
   list-style:none; display:flex; gap:1rem; margin:0; padding:0;
 }
 .site-nav a{
-  color:#c7d2fe; text-decoration:none; padding:.5rem .75rem; border-radius:10px;
+  color:#f0f2fa; text-decoration:none; padding:.5rem .75rem; border-radius:10px;
   transition:background .2s, transform .2s;
 }
-.site-nav a:hover{background:rgba(99,102,241,.15); transform:translateY(-2px)}
+.site-nav a:hover{background:rgba(99,102,241,.15); transform:translateY(-2px) scale(1.02)}
+.site-nav a:active{transform:translateY(0) scale(1)}
+
+nav :where(a){text-decoration:none}
+.card:has(.card-title){border-color: rgba(99,102,241,.35)}
+.projects > article:nth-child(3n){outline:1px dashed rgba(255,255,255,.08)}
 
 .menu-toggle{display:none}
 .hamburger{display:none; width:40px; height:40px; border-radius:12px; cursor:pointer; position:relative}
@@ -163,7 +172,7 @@ h3{font-weight:600; font-size:1.125rem}
   transition: transform .2s ease, border-color .2s ease;
 }
 .card:hover{transform:translateY(-3px); border-color:rgba(99,102,241,.35)}
-
+.card:hover{transform:translateY(-4px); transition:.25s; }
 
 .proj-list{margin:0; padding-left:1.2rem}
 
@@ -194,6 +203,11 @@ h3{font-weight:600; font-size:1.125rem}
 @keyframes popIn{from{transform:scale(.98); opacity:0} to{transform:scale(1); opacity:1}}
 .card{animation:popIn .5s ease both}
 
+@keyframes fadeUp{from{opacity:0; transform:translateY(20px)} to{opacity:1; transform:none}}
+@keyframes popIn{from{opacity:0; transform:scale(.98)} to{opacity:1; transform:scale(1)}}
+.reveal{opacity:0; transform:translateY(40px); transition:all .8s ease-out}
+.reveal.active{opacity:1; transform:none}
+.card{animation:popIn .5s ease both}
 
 @media (max-width: 760px){
   .hamburger{display:block}
